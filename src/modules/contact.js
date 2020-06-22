@@ -6,6 +6,7 @@ function renderContact(){
 
     const image=document.createElement("img");
     image.src="https://i.ya-webdesign.com/images/maps-vector-treasure-hunt-1.png";
+    image.className="map";
     content.appendChild(image);
 
     return content

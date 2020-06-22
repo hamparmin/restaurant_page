@@ -43,20 +43,22 @@ function createTab(id,name,renderMe){
     tab.for=id;
     tab.textContent=name;
     tab.id=id;
+
+    //render inside
     const inside=renderMe();
-    tab.appendChild=inside;
+    tab.appendChild(inside);
 
     //append to DOM
     tabsy.appendChild(radio);
     tabsy.appendChild(tab);
+    
 }
 
 createTab("tab1", "About",renderAbout);
 createTab("tab2", "Menu",renderMenu);
 createTab("tab3", "Contact Us",renderContact);
 
-const button1=document.querySelector("#tab1");
-button1.checked=true;
+document.querySelector("#tab1").checked=true;
 
-const test=renderContact();
-content.append(test);
+//const test=renderContact();
+//content.append(test);
