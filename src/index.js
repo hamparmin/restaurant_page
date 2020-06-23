@@ -1,8 +1,8 @@
 //import modules
 import {renderAbout} from './modules/about'
 import {renderContact} from './modules/contact'
-import {renderMenu} from './modules/menu'
 
+console.log("hey ive loaded");
 //set up basic structure
 const content=document.querySelector("#content");
 
