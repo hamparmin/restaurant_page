@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Simple tabs toggler component written in pure CSS with no dependencies">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="tabsy.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <main>
     <div id="content"></div>
+    <div class="tabsy">
+        <input type="radio" id="tab1" name="tab" checked>
+        <label class="tabButton" for="tab1">About Us</label>
+        <div class="tab">
+            <div class="about">
+            </div>
+        </div>
+        <input type="radio" id="tab2" name="tab">
+        <label class="tabButton" for="tab2">Menu</label>
+        <div class="tab">
+            <div class="menu">
+                <p>Here at PizzArminia we operate on self-service. Please find below our instructions for how to make your own, most delish pizza. </p>
+                <br>
+                <ul>
+                    <li>Gather ingredients</li>
+                    <li>Mix ingredients together</li>
+                    <li>Place ingredients in a baking dish</li>
+                  </ul>
+                  <br>
+                  
+                  <p>Before you place the ingredients in the baking dish, preheat the oven to
+                  180 degrees centigrade/350 degrees fahrenheit in readiness for the next step.</p>
+                  <br>
+                  <ul>
+                    <li>Bake in oven for an hour</li>
+                    <li>Remove from oven</li>
+                    <li>Allow to stand for ten minutes</li>
+                    <li>Serve</li>
+                  </ul>
+            </div>
+        </div>
+        <input type="radio" id="tab3" name="tab">
+        <label class="tabButton" for="tab3">Contact</label>
+        <div class="tab">
+            <div class="contact">
+            </div>
+        </div>
+    </div>
+    </main>
 </body>
 <script src="main.js"></script>
 </html>
